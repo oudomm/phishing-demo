@@ -1,5 +1,5 @@
 const express = require("express");
-const fs = require("fs");
+// const fs = require("fs");
 const path = require("path");
 
 const app = express();
@@ -25,7 +25,7 @@ Time: ${new Date().toLocaleString()}
 `;
 
   console.log(log);
-  fs.appendFileSync("demo-captured.txt", log);
+  // fs.appendFileSync("demo-captured.txt", log);
 
   res.send(`
      <h1>You got hacked 💀</h1>
