@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f2f5;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fb-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fb-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex: 1;
+  padding: 40px 16px 60px;
+  flex-wrap: wrap;
+}
+
+/* Left hero */
+.fb-hero {
+  max-width: 380px;
+  padding-bottom: 64px;
+}
+
+.fb-wordmark {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1877f2;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fb-hero p {
+  font-size: 28px;
+  line-height: 1.3;
+  color: #1c1e21;
+  font-weight: 400;
+}
+
+/* Login card */
+.fb-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 396px;
+  max-width: 100%;
+}
+
+.fb-card input[type="text"],
+.fb-card input[type="password"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 17px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  display: block;
+  color: #1c1e21;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.fb-card input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f0fd;
+}
+
+.fb-card input::placeholder {
+  color: #a8abaf;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+  margin-bottom: 4px;
+}
+
+.btn-login:hover {
+  background: #166fe5;
+}
+.btn-login:active {
+  background: #1464d2;
+}
+
+.forgot {
+  display: block;
+  text-align: center;
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 0;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.fb-divider {
+  border: none;
+  border-top: 1px solid #dadde1;
+  margin: 12px 0 20px;
+}
+
+.btn-signup {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 24px;
+  font-size: 17px;
+  font-weight: 700;
+  background: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-signup:hover {
+  background: #36a420;
+}
+
+.fb-meta {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13.5px;
+  color: #1c1e21;
+}
+
+.fb-meta a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.fb-meta a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.fb-footer {
+  background: #fff;
+  border-top: 1px solid #dadde1;
+  padding: 16px;
+  font-size: 12px;
+  color: #737373;
+}
+
+.footer-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.footer-langs a {
+  color: #606770;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-langs a:hover {
+  text-decoration: underline;
+}
+
+.lang-btn {
+  border: 1px solid #ccd0d5;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-size: 11px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 11px;
+  color: #9197a3;
+  margin-top: 4px;
+}
